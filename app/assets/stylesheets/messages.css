@@ -121,6 +121,11 @@
   display: flex;
 }
 
+.form{
+  display: flex;
+  width: 100%;
+}
+
 .form-input{
   background-color: white;
   display: flex;
