@@ -121,6 +121,11 @@
   display: flex;
 }
 
+.form{
+  display: flex;
+  width: 100%;
+}
+
 .form-input{
   background-color: white;
   display: flex;
@@ -156,4 +161,8 @@
   padding: 0 20px;
   margin-left: 15px;
   border: none;
+}
+
+.field_with_errors {
+  display: contents;
 }
