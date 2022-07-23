@@ -4,20 +4,7 @@
     <div class="top-chat-name"><a href="">チャットを終了する</a></div>
   </div>
   <div class="main-chat-middle">
-    <div class="chat-content">
-      <div class="name-date">
-        <div class="content-name">Tom</div>
-        <div class="content-date">2020/3/31(Wed) 12:43:30</div>
-      </div>
-      <div class="content-message">おはよう</div>
-    </div>
-    <div class="chat-content">
-      <div class="name-date">
-        <div class="content-name">Tom</div>
-        <div class="content-date">2020/3/31(Wed) 12:43:40</div>
-      </div>
-      <div class="content-message">こんばんは</div>
-    </div>
+    <%= render partial: 'message' , collection: @messages %>
   </div>
   <div class="main-chat-bottom">
   <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
